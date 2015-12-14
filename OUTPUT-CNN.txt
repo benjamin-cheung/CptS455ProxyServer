@@ -1,4 +1,4 @@
-benjamin@ubuntu:~/Desktop/ProxyServer$ python ForkingServerCNN.py
+benjamin@ubuntu:~/Desktop/ProxyServer$ python ProxyServer.py
 
 CLIENT HTTP REQUEST
 GET http://www.i.cdn.cnn.com/.a/1.226.0/css/pages/page-blessed1.css HTTP/1.1
@@ -370,13 +370,13 @@ Connection: keep-alive
 
 SERVER HTTP RESPONSE:
 HTTP/1.1 200 OK
-Server: Apache-Coyote/1.1
-Content-Type: image/jpeg
-Content-Length: 51031
-Cache-Control: max-age=6271
-Expires: Mon, 14 Dec 2015 03:09:22 GMT
-Date: Mon, 14 Dec 2015 01:24:51 GMT
+Server: nginx
+Date: Mon, 14 Dec 2015 05:19:48 GMT
+Content-Type: text/javascript
+Transfer-Encoding: chunked
 Connection: keep-alive
+Set-Cookie: ug1=566e517409228d0a3c743c2b4701945a; path=/; domain=.www.ugdturner.com; expires=Sat, 12-Dec-20 05:19:48 GMT
+Cache-Control: no-cache
 
 
 CLIENT HTTP REQUEST

@@ -1,3 +1,8 @@
+# Benjamin Cheung
+# CptS 455 Computer Networking
+# Project 3 - Proxy Server
+# December 13, 2015
+
 import string
 import socket
 import os
@@ -6,9 +11,9 @@ import signal
 import re
 
 # returns info from the socket
-def recieve(sock, numBytes = None):
+def receive(sock, numBytes = None):
     data = ''
-    if numBytes is None:    # recieve until socket is empty
+    if numBytes is None:    # receive until socket is empty
         while True:
             byte = sock.recv(1)
             if not byte:
@@ -17,7 +22,7 @@ def recieve(sock, numBytes = None):
             if '\r\n\r\n' in data:
                 break
     else:
-        while numBytes > 0: # recieve a specific number of bytes
+        while numBytes > 0: # receive a specific number of bytes
             byte = sock.recv(1)
             if not byte:
                 break
@@ -25,8 +30,8 @@ def recieve(sock, numBytes = None):
             numBytes -= 1
     return data
 
-# recieves all chunks from the webserver and returns as one string
-def recieveChunks(sock):
+# receives all chunks from the webserver and returns as one string
+def receiveChunks(sock):
     data = ''
     while True:
         chunk = ''
@@ -41,7 +46,7 @@ def recieveChunks(sock):
             break
         
         length = int(str(chunk.strip()), 16)
-        chunk = recieve(sock, length)
+        chunk = receive(sock, length)
         data += chunk
     return data
 
@@ -53,7 +58,7 @@ def send(sock, data):
 def parseHeader(data):
     return dict(re.findall(r"(?P<name>.*?): (?P<value>.*?)\r\n", data))
 
-# checks if the data to be recieved is chunked
+# checks if the data to be received is chunked
 def checkChunked(hdr):
     isChunked = False
     if 'Transfer-Encoding' in hdr.keys():
@@ -63,38 +68,38 @@ def checkChunked(hdr):
 #        isChunked = True
     return isChunked
 
-# determines how to handle content to be recieved from server
+# determines how to handle content to be received from server
 def handleServerResponse(servSock, clientSock, hdr, data):
     isChunked = checkChunked(hdr)
     contLength = 0
-    # recieve chunked content
+    # receive chunked content
     if isChunked:
-        data += recieveChunks(servSock)
+        data += receiveChunks(servSock)
         send(clientSock, data)
-    # recieve content all at once
+    # receive content all at once
     elif 'Content-Length' in hdr.keys():
         contLength = int(hdr['Content-Length'])
         if contLength > 0:
-            data += recieve(servSock, contLength)
+            data += receive(servSock, contLength)
         else:
-            data += recieve(servSock)
+            data += receive(servSock)
         send(clientSock, data)
-    # no content to recieve
+    # no content to receive
     else:
         send(clientSock, data)
 
 # determines how to handle client requests
 def handleClientSock(clientSock, addr):
     while True:
-        data = recieve(clientSock)
+        data = receive(clientSock)
         # end loop when client has no requests or responses
         if not data:
             break
         
         hdrClient = parseHeader(data)
         # allows requests to successfully go through the WSU firewall
-        data.replace('GET http://' + hdrClient['Host'], 'GET ')
-        data.replace('GET ' + hdrClient['Host'], 'GET ')
+        data = data.replace('GET http://' + hdrClient['Host'], 'GET ')
+        data = data.replace('GET ' + hdrClient['Host'], 'GET ')
         # create socket and connect to host
         connInfo = str(hdrClient['Host']).split(':')
         servSock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
@@ -106,12 +111,12 @@ def handleClientSock(clientSock, addr):
         # Adds POST content to data for POST requests
         if 'POST' in data:
             print('CLIENT POST REQUEST HEADER ONLY:\n' + data)
-            data += recieve(clientSock, int(hdrClient['Content-Length']))
+            data += receive(clientSock, int(hdrClient['Content-Length']))
         else:
             print('CLIENT HTTP REQUEST\n' + data)
         
         send(servSock, data)
-        data = recieve(servSock)
+        data = receive(servSock)
         # handles server responses
         if data:
             hdrServer = parseHeader(data)
@@ -139,9 +144,6 @@ while True:
     if pid == 0:    # child proc
         handleClientSock(clientSock, addr)
 
+# Testing Websites
 # http://www.eecs.wsu.edu/~hauser/teaching/Networks-F15/lectures/calendar.html
-
-
-
-
-
+# www.cnn.com

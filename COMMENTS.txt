@@ -1,0 +1,145 @@
+# Benjamin Cheung
+# CptS 455 Computer Networking
+# Project 3 - Proxy Server
+# December 13, 2015
+
+TEST SITE : http://www.eecs.wsu.edu/~hauser/teaching/Networks-F15/lectures/calendar.html
+
+This is the GET request the client browser sends to the web server to navigate to the 455 calendar page.
+When the proxy receives this, it gets the Host field and connects a new socket to the webserver at the 
+host with port 80. The GET request is then sent to the web server.
+    GET /~hauser/teaching/Networks-F15/lectures/calendar.html HTTP/1.1
+    Host: www.eecs.wsu.edu
+    User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:39.0) Gecko/20100101 Firefox/39.0
+    Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+    Accept-Language: en-US,en;q=0.5
+    Accept-Encoding: gzip, deflate
+    Connection: keep-alive
+    If-Modified-Since: Fri, 11 Dec 2015 19:29:18 GMT
+    If-None-Match: "4e9e-526a456f2c21a"
+
+This is an HTTP response header the webserver sends back to the client browser as a result of a HEAD
+request. The status code 200 in the first line shows that the GET request was successful and the server 
+will return the contents of the requested document, right after the header.
+    HTTP/1.1 200 OK
+    Date: Mon, 14 Dec 2015 03:47:45 GMT
+    Server: Apache/2.4.6 (CentOS) mod_fcgid/2.3.9 PHP/5.4.16
+    Keep-Alive: timeout=5, max=100
+    Connection: Keep-Alive
+    Content-Type: text/html
+
+This is an HTTP response header in which the attempt at getting an image was forbidden as can be seen
+from the status code 403 in the first line.
+    HTTP/1.1 403 Forbidden
+    Server: Apache/2.4.7 (Ubuntu)
+    Content-Type: text/html; charset=iso-8859-1
+    Content-Length: 331
+    Accept-Ranges: bytes
+    Date: Mon, 14 Dec 2015 03:47:18 GMT
+    X-Varnish: 7752807
+    Age: 0
+    Via: 1.1 varnish
+    Connection: close
+    Set-Cookie: chm=newapp3; path=/
+
+This is a POST request that occurs when submitting for ZZZTest a text file.
+    POST http://www.eecs.wsu.edu/~hauser/cgi-bin/UploadFile.py HTTP/1.1
+    Host: www.eecs.wsu.edu
+    User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:39.0) Gecko/20100101 Firefox/39.0
+    Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+    Accept-Language: en-US,en;q=0.5
+    Accept-Encoding: gzip, deflate
+    Referer: http://www.eecs.wsu.edu/~hauser/teaching/Networks-F15/turnin.html
+    Connection: keep-alive
+    Content-Type: multipart/form-data; boundary=---------------------------16631165678093590341389012650
+    Content-Length: 2583
+
+
+TEST SITE : www.cnn.com
+
+This is the GET request the client browser sends to the web server to navigate to the CNN news website.
+When the proxy receives this, it gets the Host field and connects a new socket to the webserver at the 
+host with port 80. The GET request is then sent to the web server.
+    GET / HTTP/1.1
+    Host: www.cnn.com
+    User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:39.0) Gecko/20100101 Firefox/39.0
+    Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+    Accept-Language: en-US,en;q=0.5
+    Accept-Encoding: gzip, deflate
+    Cookie: optimizelyEndUserId=oeu1449982829371r0.1378776643822348; optimizelySegments=%7B%22170962340%22%3A%22false%22%2C%22171657961%22%3A%22ff%22%2C%22172148679%22%3A%22none%22%2C%22172265329%22%3A%22direct%22%7D; optimizelyBuckets=%7B%7D; s_fid=00CF141DA9A1E44A-271C317D6F02DCE8; __CT_Data=gpv=5&apv_49_www04=5; WRUIDC=0; _cb_ls=1; _chartbeat2=6Qf9-CMzfptCWZRHk.1449994112423.1450056167356.1; __gads=ID=a52ef1de2f36cce9:T=1449994283:S=ALNI_MZUgJYIEf2Zlb3n4IgbCa70XcHfrQ; __vrf=1450055640174fDp0gAV9gSXhyTtPVi0USb9s1mlnL9r6; s_cc=true; s_sq=%5B%5BB%5D%5D; _chartbeat4=t=D01mNE8gEcGDmfixjDa9i1MCW_xZ0&E=8&EE=8&x=0&c=0.86&y=6943&w=820
+    Connection: keep-alive
+
+This is an HTTP response header the webserver sends back to the client browser. The status code 200 in
+the first line shows that the GET request was successful and the server will return the contents of the
+requested document, right after the header.
+    HTTP/1.1 200 OK
+    x-servedByHost: prd-10-60-168-41.nodes.56m.dmtio.net
+    Cache-Control: max-age=2592000
+    Content-Type: text/css; charset=UTF-8
+    Content-Encoding: gzip
+    Via: 1.1 varnish
+    Content-Length: 37814
+    Accept-Ranges: bytes
+    Date: Mon, 14 Dec 2015 01:24:48 GMT
+    Via: 1.1 varnish
+    Age: 204551
+    Connection: keep-alive
+    X-Served-By: cache-iad2135-IAD, cache-dfw1833-DFW
+    X-Cache: HIT, HIT
+    X-Cache-Hits: 1, 230489
+    X-Timer: S1450056288.507095,VS0,VE0
+    Vary: Accept-Encoding
+
+This is an HTTP response header the webserver sends back to the client browser. It indicates that the
+content to be sent back to the client browser will be done with chunked transfer-encoding.
+    HTTP/1.1 200 OK
+    Server: nginx
+    Date: Mon, 14 Dec 2015 05:19:48 GMT
+    Content-Type: text/javascript
+    Transfer-Encoding: chunked
+    Connection: keep-alive
+    Set-Cookie: ug1=566e517409228d0a3c743c2b4701945a; path=/; domain=.www.ugdturner.com; expires=Sat, 12-Dec-20 05:19:48 GMT
+    Cache-Control: no-cache
+
+TEST SITE : www.google.com
+
+This is the GET request the client browser sends to the web server to navigate to the google search
+website. When the proxy receives this, it gets the Host field and connects a new socket to the webserver
+at the host with port 80. The GET request is then sent to the web server.
+    GET / HTTP/1.1
+    Host: www.google.com
+    User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:39.0) Gecko/20100101 Firefox/39.0
+    Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+    Accept-Language: en-US,en;q=0.5
+    Accept-Encoding: gzip, deflate
+    Cookie: PREF=ID=1111111111111111:FF=0:TM=1446159992:LM=1446159992:V=1:S=e-hSWOw7Mya69QSI; NID=74=vQMoZTncS_ROyL6eYpDzJdcqrZlY_fe5AgxqTp6NDICk-Arv3gDkn9YpF52QuBb1hSTnSQlMfEL675LUZylCQTwx2G_OgwcSF6XsEGRRRaglX9Nu05LsLvFWXovbyde91KgSpTGa7zSAnm34q8Tuit5TZJNWSK57qObmHGmwq9b_3uLQCzvc0lS0ZfDdqRyDuwpJozBp3L2F4g; OGP=-5061451:; OGPC=5061821-6:; DV=IoRMrLoQbO0f0hGo5Sva_oFSVTo9owI
+    Connection: keep-alive
+
+
+This is an HTTP response header the webserver sends back to the client browser. The status code 302
+in the first line indicates that the requested resource resides temporarily under a different URL. 
+Since the redirection might be altered on occasion, the client must continue to use the that URL
+for future requests.
+    HTTP/1.1 302 Found
+    Location: https://www.google.com/?gws_rd=ssl
+    Cache-Control: private
+    Content-Type: text/html; charset=UTF-8
+    Date: Mon, 14 Dec 2015 03:57:31 GMT
+    Server: gws
+    Content-Length: 231
+    X-XSS-Protection: 1; mode=block
+    X-Frame-Options: SAMEORIGIN
+    Set-Cookie: DV=; expires=Mon, 01-Jan-1990 00:00:00 GMT; path=/; domain=www.google.com
+    Set-Cookie: DV=; expires=Mon, 01-Jan-1990 00:00:00 GMT; path=/; domain=.www.google.com
+    Set-Cookie: DV=; expires=Mon, 01-Jan-1990 00:00:00 GMT; path=/; domain=google.com
+    Set-Cookie: DV=; expires=Mon, 01-Jan-1990 00:00:00 GMT; path=/; domain=.google.com
+
+SUMMARY
+    In all the websites, all of the headers sent to and from the client browser and webservers were
+    using GET and HEAD requests as well as HTTP responses. The 455 Calendar site was the only one
+    to use a POST request since it was the only website I filled out a web form for to submit. The
+    CNN news site was also the only one to use chunked transfer-encoding which allows for the sending
+    of data before all the content has been generated for sending. It allows for a faster loading of
+    the webpage and serves to ensure the user doesn't just think there's a problem when there isn't
+    one since the client browser will update as the chunks are sent.
+
