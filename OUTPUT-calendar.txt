@@ -1,0 +1,26 @@
+benjamin@ubuntu:~/Desktop/ProxyServer$ python ForkingServerCNN.py
+
+CLIENT HTTP REQUEST
+GET http://www.computerhistory.org/internet_history/thumbs/david_clark_t.jpg HTTP/1.1
+Host: www.computerhistory.org
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:39.0) Gecko/20100101 Firefox/39.0
+Accept: image/png,image/*;q=0.8,*/*;q=0.5
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://www.eecs.wsu.edu/~hauser/teaching/Networks-F15/lectures/calendar.html
+Cookie: chm=newapp2
+Connection: keep-alive
+
+
+SERVER HTTP RESPONSE:
+HTTP/1.1 403 Forbidden
+Server: Apache/2.4.7 (Ubuntu)
+Content-Type: text/html; charset=iso-8859-1
+Content-Length: 331
+Accept-Ranges: bytes
+Date: Mon, 14 Dec 2015 01:20:22 GMT
+X-Varnish: 1737250374
+Age: 0
+Via: 1.1 varnish
+Connection: close
+

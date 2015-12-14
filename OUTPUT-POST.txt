@@ -1,0 +1,24 @@
+benjamin@ubuntu:~/Desktop/ProxyServer$ python ForkingServerCNN.py
+
+CLIENT POST REQUEST HEADER ONLY:
+POST http://www.eecs.wsu.edu/~hauser/cgi-bin/UploadFile.py HTTP/1.1
+Host: www.eecs.wsu.edu
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:39.0) Gecko/20100101 Firefox/39.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://www.eecs.wsu.edu/~hauser/teaching/Networks-F15/turnin.html
+Connection: keep-alive
+Content-Type: multipart/form-data; boundary=---------------------------513341565192129703239427749
+Content-Length: 2569
+
+
+SERVER HTTP RESPONSE:
+HTTP/1.1 200 OK
+Date: Mon, 14 Dec 2015 01:29:59 GMT
+Server: Apache/2.4.6 (CentOS) mod_fcgid/2.3.9 PHP/5.4.16
+Content-Length: 318
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Content-Type: text/html
+

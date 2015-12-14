@@ -1,0 +1,1332 @@
+benjamin@ubuntu:~/Desktop/ProxyServer$ python ForkingServerCNN.py
+
+CLIENT HTTP REQUEST
+GET http://www.i.cdn.cnn.com/.a/1.226.0/css/pages/page-blessed1.css HTTP/1.1
+Host: www.i.cdn.cnn.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:39.0) Gecko/20100101 Firefox/39.0
+Accept: text/css,*/*;q=0.1
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://www.cnn.com/
+Cookie: optimizelyEndUserId=oeu1449982829371r0.1378776643822348; optimizelySegments=%7B%22170962340%22%3A%22false%22%2C%22171657961%22%3A%22ff%22%2C%22172148679%22%3A%22none%22%2C%22172265329%22%3A%22direct%22%7D; optimizelyBuckets=%7B%7D; s_fid=00CF141DA9A1E44A-271C317D6F02DCE8; __CT_Data=gpv=5&apv_49_www04=5; WRUIDC=0; __gads=ID=a52ef1de2f36cce9:T=1449994283:S=ALNI_MZUgJYIEf2Zlb3n4IgbCa70XcHfrQ; __vrf=1450055640174fDp0gAV9gSXhyTtPVi0USb9s1mlnL9r6; s_cc=true; s_sq=%5B%5BB%5D%5D
+Connection: keep-alive
+
+
+SERVER HTTP RESPONSE:
+HTTP/1.1 200 OK
+x-servedByHost: prd-10-60-168-41.nodes.56m.dmtio.net
+Cache-Control: max-age=2592000
+Content-Type: text/css; charset=UTF-8
+Content-Encoding: gzip
+Via: 1.1 varnish
+Content-Length: 37814
+Accept-Ranges: bytes
+Date: Mon, 14 Dec 2015 01:24:48 GMT
+Via: 1.1 varnish
+Age: 204551
+Connection: keep-alive
+X-Served-By: cache-iad2135-IAD, cache-dfw1833-DFW
+X-Cache: HIT, HIT
+X-Cache-Hits: 1, 230489
+X-Timer: S1450056288.507095,VS0,VE0
+Vary: Accept-Encoding
+
+
+CLIENT HTTP REQUEST
+GET http://www.cnn.com/data/ocs/section/index.html:homepage4-zone-2/views/zones/common/zone-manager.html HTTP/1.1
+Host: www.cnn.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:39.0) Gecko/20100101 Firefox/39.0
+Accept: text/html, */*; q=0.01
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+X-Requested-With: XMLHttpRequest
+Referer: http://www.cnn.com/
+Cookie: optimizelyEndUserId=oeu1449982829371r0.1378776643822348; optimizelySegments=%7B%22170962340%22%3A%22false%22%2C%22171657961%22%3A%22ff%22%2C%22172148679%22%3A%22none%22%2C%22172265329%22%3A%22direct%22%7D; optimizelyBuckets=%7B%7D; s_fid=00CF141DA9A1E44A-271C317D6F02DCE8; __CT_Data=gpv=5&apv_49_www04=5; WRUIDC=0; _cb_ls=1; _chartbeat2=6Qf9-CMzfptCWZRHk.1449994112423.1450056167356.1; __gads=ID=a52ef1de2f36cce9:T=1449994283:S=ALNI_MZUgJYIEf2Zlb3n4IgbCa70XcHfrQ; __vrf=1450055640174fDp0gAV9gSXhyTtPVi0USb9s1mlnL9r6; s_cc=true; s_sq=%5B%5BB%5D%5D; _chartbeat4=t=D01mNE8gEcGDmfixjDa9i1MCW_xZ0&E=8&EE=8&x=0&c=0.86&y=6943&w=820; optimizelyPendingLogEvents=%5B%22n%3Dhttp%253A%252F%252Fwww.cnn.com%252F%26u%3Doeu1449982829371r0.1378776643822348%26wxhr%3Dtrue%26time%3D1450056289.293%26f%3D3362100525%2C4128893592%2C4044622920%2C3432030159%2C4052120025%2C4037979629%26g%3D3734750647%2C1387641853%2C3691011633%22%5D
+Connection: keep-alive
+
+
+SERVER HTTP RESPONSE:
+HTTP/1.1 200 OK
+x-servedByHost: prd-10-60-168-49.nodes.56m.dmtio.net
+Cache-Control: max-age=60
+X-XSS-Protection: 1; mode=block
+Content-Security-Policy: default-src 'self' http://*.cnn.com:* https://*.cnn.com:* *.cnn.net:* *.turner.com:* *.ugdturner.com:* *.vgtf.net:*; script-src 'unsafe-inline' 'unsafe-eval' 'self' *; style-src 'unsafe-inline' 'self' *; frame-src 'self' *; object-src 'self' *; img-src 'self' * data:; media-src 'self' *; font-src 'self' *; connect-src 'self' *;
+Access-Control-Allow-Origin: *
+Content-Type: text/html; charset=utf-8
+Content-Encoding: gzip
+Via: 1.1 varnish
+Fastly-Debug-Digest: 35b22c288ddc6a8dcca9e283f00629bc9186779a519ceee5c90749f869294816
+Content-Length: 2741
+Accept-Ranges: bytes
+Date: Mon, 14 Dec 2015 01:24:49 GMT
+Via: 1.1 varnish
+Age: 183
+Connection: keep-alive
+X-Served-By: cache-iad2136-IAD, cache-dfw1823-DFW
+X-Cache: HIT, HIT
+X-Cache-Hits: 1, 218
+X-Timer: S1450056289.473730,VS0,VE0
+Vary: Accept-Encoding
+
+
+CLIENT HTTP REQUEST
+GET http://www.cnn.com/data/ocs/section/index.html:homepage2-zone-1/views/zones/common/zone-manager.html HTTP/1.1
+Host: www.cnn.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:39.0) Gecko/20100101 Firefox/39.0
+Accept: text/html, */*; q=0.01
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+X-Requested-With: XMLHttpRequest
+Referer: http://www.cnn.com/
+CLIENT HTTP REQUEST
+GET http://www.i.cdn.cnn.com/.a/1.226.0/js/cnn-header-first.min.js HTTP/1.1
+Host: www.i.cdn.cnn.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:39.0) Gecko/20100101 Firefox/39.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://www.cnn.com/
+Cookie: optimizelyEndUserId=oeu1449982829371r0.1378776643822348; optimizelySegments=%7B%22170962340%22%3A%22false%22%2C%22171657961%22%3A%22ff%22%2C%22172148679%22%3A%22none%22%2C%22172265329%22%3A%22direct%22%7D; optimizelyBuckets=%7B%7D; s_fid=00CF141DA9A1E44A-271C317D6F02DCE8; __CT_Data=gpv=5&apv_49_www04=5; WRUIDC=0; __gads=ID=a52ef1de2f36cce9:T=1449994283:S=ALNI_MZUgJYIEf2Zlb3n4IgbCa70XcHfrQ; __vrf=1450055640174fDp0gAV9gSXhyTtPVi0USb9s1mlnL9r6; s_cc=true; s_sq=%5B%5BB%5D%5D
+Connection: keep-alive
+
+
+SERVER HTTP RESPONSE:
+HTTP/1.1 200 OK
+x-servedByHost: prd-10-60-166-101.nodes.56m.dmtio.net
+Cache-Control: max-age=2592000
+Content-Type: application/javascript
+Content-Encoding: gzip
+Via: 1.1 varnish
+Content-Length: 36944
+Accept-Ranges: bytes
+Date: Mon, 14 Dec 2015 01:24:48 GMT
+Via: 1.1 varnish
+Age: 204552
+Connection: keep-alive
+X-Served-By: cache-iad2142-IAD, cache-dfw1822-DFW
+X-Cache: HIT, HIT
+X-Cache-Hits: 1, 47781
+X-Timer: S1450056288.516664,VS0,VE0
+Vary: Accept-Encoding
+
+
+CLIENT HTTP REQUEST
+GET http://www.cnn.com/data/ocs/section/index.html:homepage4-zone-3/views/zones/common/zone-manager.html HTTP/1.1
+Host: www.cnn.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:39.0) Gecko/20100101 Firefox/39.0
+Accept: text/html, */*; q=0.01
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+X-Requested-With: XMLHttpRequest
+Referer: http://www.cnn.com/
+Cookie: optimizelyEndUserId=oeu1449982829371r0.1378776643822348; optimizelySegments=%7B%22170962340%22%3A%22false%22%2C%22171657961%22%3A%22ff%22%2C%22172148679%22%3A%22none%22%2C%22172265329%22%3A%22direct%22%7D; optimizelyBuckets=%7B%7D; s_fid=00CF141DA9A1E44A-271C317D6F02DCE8; __CT_Data=gpv=5&apv_49_www04=5; WRUIDC=0; _cb_ls=1; _chartbeat2=6Qf9-CMzfptCWZRHk.1449994112423.1450056167356.1; __gads=ID=a52ef1de2f36cce9:T=1449994283:S=ALNI_MZUgJYIEf2Zlb3n4IgbCa70XcHfrQ; __vrf=1450055640174fDp0gAV9gSXhyTtPVi0USb9s1mlnL9r6; s_cc=true; s_sq=%5B%5BB%5D%5D; _chartbeat4=t=D01mNE8gEcGDmfixjDa9i1MCW_xZ0&E=8&EE=8&x=0&c=0.86&y=6943&w=820; optimizelyPendingLogEvents=%5B%22n%3Dhttp%253A%252F%252Fwww.cnn.com%252F%26u%3Doeu1449982829371r0.1378776643822348%26wxhr%3Dtrue%26time%3D1450056289.293%26f%3D3362100525%2C4128893592%2C4044622920%2C3432030159%2C4052120025%2C4037979629%26g%3D3734750647%2C1387641853%2C3691011633%22%5D
+Connection: keep-alive
+
+
+SERVER HTTP RESPONSE:
+HTTP/1.1 200 OK
+x-servedByHost: prd-10-60-165-21.nodes.56m.dmtio.net
+Cache-Control: max-age=60
+X-XSS-Protection: 1; mode=block
+Content-Security-Policy: default-src 'self' http://*.cnn.com:* https://*.cnn.com:* *.cnn.net:* *.turner.com:* *.ugdturner.com:* *.vgtf.net:*; script-src 'unsafe-inline' 'unsafe-eval' 'self' *; style-src 'unsafe-inline' 'self' *; frame-src 'self' *; object-src 'self' *; img-src 'self' * data:; media-src 'self' *; font-src 'self' *; connect-src 'self' *;
+Access-Control-Allow-Origin: *
+Content-Type: text/html; charset=utf-8
+Content-Encoding: gzip
+Via: 1.1 varnish
+Fastly-Debug-Digest: 1aa4cb09bb808501efbc362650d1de4fa1d199ba458ec52b80f16fa5b4683b32
+Content-Length: 3666
+Accept-Ranges: bytes
+Date: Mon, 14 Dec 2015 01:24:49 GMT
+Via: 1.1 varnish
+Age: 160
+Connection: keep-alive
+X-Served-By: cache-iad2150-IAD, cache-dfw1826-DFW
+X-Cache: HIT, HIT
+X-Cache-Hits: 1, 166
+X-Timer: S1450056289.477549,VS0,VE0
+Vary: Accept-Encoding
+
+
+CLIENT HTTP REQUEST
+GET http://www.cnn.com/data/ocs/section/index.html:homepage4-zone-1/views/zones/common/zone-manager.html HTTP/1.1
+Host: www.cnn.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:39.0) Gecko/20100101 Firefox/39.0
+Accept: text/html, */*; q=0.01
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+X-Requested-With: XMLHttpRequest
+Referer: http://www.cnn.com/
+Cookie: optimizeCLIENT HTTP REQUEST
+GET http://www.cnn.com/ HTTP/1.1
+Host: www.cnn.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:39.0) Gecko/20100101 Firefox/39.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Cookie: optimizelyEndUserId=oeu1449982829371r0.1378776643822348; optimizelySegments=%7B%22170962340%22%3A%22false%22%2C%22171657961%22%3A%22ff%22%2C%22172148679%22%3A%22none%22%2C%22172265329%22%3A%22direct%22%7D; optimizelyBuckets=%7B%7D; s_fid=00CF141DA9A1E44A-271C317D6F02DCE8; __CT_Data=gpv=5&apv_49_www04=5; WRUIDC=0; _cb_ls=1; _chartbeat2=6Qf9-CMzfptCWZRHk.1449994112423.1450056167356.1; __gads=ID=a52ef1de2f36cce9:T=1449994283:S=ALNI_MZUgJYIEf2Zlb3n4IgbCa70XcHfrQ; __vrf=1450055640174fDp0gAV9gSXhyTtPVi0USb9s1mlnL9r6; s_cc=true; s_sq=%5B%5BB%5D%5D; _chartbeat4=t=D01mNE8gEcGDmfixjDa9i1MCW_xZ0&E=8&EE=8&x=0&c=0.86&y=6943&w=820
+Connection: keep-alive
+
+
+SERVER HTTP RESPONSE:
+HTTP/1.1 200 OK
+x-servedByHost: prd-10-60-170-44.nodes.56m.dmtio.net
+Cache-Control: max-age=60
+X-XSS-Protection: 1; mode=block
+Content-Security-Policy: default-src 'self' http://*.cnn.com:* https://*.cnn.com:* *.cnn.net:* *.turner.com:* *.ugdturner.com:* *.vgtf.net:*; script-src 'unsafe-inline' 'unsafe-eval' 'self' *; style-src 'unsafe-inline' 'self' *; frame-src 'self' *; object-src 'self' *; img-src 'self' * data:; media-src 'self' *; font-src 'self' *; connect-src 'self' *;
+Access-Control-Allow-Origin: *
+Content-Type: text/html; charset=utf-8
+Content-Encoding: gzip
+Via: 1.1 varnish
+Fastly-Debug-Digest: 1e206303e0672a50569b0c0a29903ca81f3ef5033de74682ce90ec9d13686981
+Content-Length: 20672
+Accept-Ranges: bytes
+Date: Mon, 14 Dec 2015 01:24:48 GMT
+Via: 1.1 varnish
+Age: 308
+Connection: keep-alive
+X-Served-By: cache-iad2137-IAD, cache-lax1422-LAX
+X-Cache: HIT, HIT
+X-Cache-Hits: 1, 435
+X-Timer: S1450056288.226951,VS0,VE0
+Vary: Accept-Encoding
+
+
+CLIENT HTTP REQUEST
+GET http://fast.fonts.net/t/1.css?apiType=css&projectid=20d74cc5-7f7c-49a7-80ae-fa2f389c550d HTTP/1.1
+Host: fast.fonts.net
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:39.0) Gecko/20100101 Firefox/39.0
+Accept: text/css,*/*;q=0.1
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://www.cnn.com/
+Connection: keep-alive
+If-Modified-Since: Mon, 25 Jul 2011 12:46:22 GMT
+If-None-Match: "1685107488"
+
+
+SERVER HTTP RESPONSE:
+HTTP/1.1 304 Not Modified
+Accept-Ranges: bytes
+Access-Control-Allow-Origin: *
+Cache-Control: max-age=0
+Date: Mon, 14 Dec 2015 01:24:48 GMT
+Etag: "1685107488"
+Expires: Mon, 14 Dec 2015 01:24:48 GMT
+Last-Modified: Mon, 25 Jul 2011 12:46:22 GMT
+Server: ECS (pae/3780)
+X-Cache: HIT
+
+
+CLIENT HTTP REQUEST
+GET http://i2.cdn.turner.com/cnnnext/dam/assets/151211154442-anton-lavey-restricted-small-11.jpg HTTP/1.1
+Host: i2.cdn.turner.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:39.0) Gecko/20100101 Firefox/39.0
+Accept: image/png,image/*;q=0.8,*/*;q=0.5
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://www.cnn.com/
+Connection: keep-alive
+
+
+SERVER HTTP RESPONSE:
+HTTP/1.1 200 OK
+Server: Apache-Coyote/1.1
+Content-Type: image/jpeg
+Content-Length: 5120
+Cache-Control: max-age=1882
+Expires: Mon, 14 Dec 2015 01:56:11 GMT
+Date: Mon, 14 Dec 2015 01:24:49 GMT
+Connection: keep-alive
+
+
+CLIENT HTTP REQUEST
+GET http://www.cnn.com/data/ocs/section/index.html:homepage4-zone-4/views/zones/common/zone-manager.html HTTP/1.1
+Host: www.cnn.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:39.0) Gecko/20100101 Firefox/39.0
+Accept: text/html, */*; q=0.01
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+X-Requested-With: XMLHttpRequest
+Referer: http://www.cnn.com/
+Cookie: optimizelyEndUserId=oeu1449982829371r0.1378776643822348; optimizelySegments=%7B%22170962340%22%3A%22false%22%2C%22171657961%22%3A%22ff%22%2C%22172148679%22%3A%22none%22%2C%22172265329%22%3A%22direct%22%7D; optimizelyBuckets=%7B%7D; s_fid=00CF141DA9A1E44A-271C317D6F02DCE8; __CT_Data=gpv=5&apv_49_wwwCLIENT HTTP REQUEST
+GET http://cdn.optimizely.com/js/131788053.js HTTP/1.1
+Host: cdn.optimizely.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:39.0) Gecko/20100101 Firefox/39.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://www.cnn.com/
+Connection: keep-alive
+
+
+SERVER HTTP RESPONSE:
+HTTP/1.1 200 OK
+Content-Encoding: gzip
+Accept-Ranges: bytes
+Cache-Control: max-age=120
+Content-Type: text/javascript
+Date: Mon, 14 Dec 2015 01:24:48 GMT
+Etag: "607a67d7372cccab0f712c8043d52e39"
+Last-Modified: Fri, 11 Dec 2015 22:31:55 GMT
+Server: ECS (sea/556C)
+Timing-Allow-Origin: *
+Timing-Allow-Origin: *
+Vary: Accept-Encoding
+x-amz-id-2: f/F45BEd0wCIPMzFDgQi+u/mTFBzR54lPTj5Gz6l9yVwwNJpBYS1IskfpcPWNr33
+x-amz-request-id: 973A459FB4C409F2
+X-Cache: HIT
+Content-Length: 82053
+
+
+CLIENT HTTP REQUEST
+GET http://aax.amazon-adsystem.com/e/dtb/bid?src=3159&u=http%3A%2F%2Fwww.cnn.com%2F&cb=2136356&t=2000 HTTP/1.1
+Host: aax.amazon-adsystem.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:39.0) Gecko/20100101 Firefox/39.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://www.cnn.com/
+Connection: keep-alive
+
+
+SERVER HTTP RESPONSE:
+HTTP/1.1 200 OK
+Date: Mon, 14 Dec 2015 01:24:48 GMT
+Server: Server
+Content-Type: text/javascript;charset=UTF-8
+Content-Length: 8
+Vary: User-Agent
+Keep-Alive: timeout=2, max=11
+Connection: Keep-Alive
+
+
+CLIENT HTTP REQUEST
+GET http://131788053.log.optimizely.com/event?a=131788053&d=125375509&y=false&src=js&s170962340=false&s171657961=ff&s172148679=none&s172265329=direct&tsent=1450056289.293&n=http%3A%2F%2Fwww.cnn.com%2F&u=oeu1449982829371r0.1378776643822348&wxhr=true&time=1450056289.293&f=3362100525,4128893592,4044622920,3432030159,4052120025,4037979629&g=3734750647,1387641853,3691011633&cx2=d394b737 HTTP/1.1
+Host: 131788053.log.optimizely.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:39.0) Gecko/20100101 Firefox/39.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://www.cnn.com/
+Origin: http://www.cnn.com
+Cookie: end_user_id=oeu1449982829371r0.1378776643822348
+Connection: keep-alive
+
+
+SERVER HTTP RESPONSE:
+HTTP/1.1 200 OK
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Headers: Content-Type, X-Requested-With
+Access-Control-Allow-Methods: GET
+Access-Control-Allow-Origin: http://www.cnn.com
+Content-Type: application/json
+Date: Mon, 14 Dec 2015 01:24:49 GMT
+P3P: CP="IDC DSP COR CURa ADMa OUR IND PHY ONL COM STA"
+Server: nginx
+Content-Length: 2
+Connection: keep-alive
+
+
+CLIENT HTTP REQUEST
+GET http://131788053.log.optimizely.com/event?a=131788053&d=125375509&y=false&src=js&s170962340=false&s171657961=ff&s172148679=none&s172265329=direct&tsent=1450056289.516&n=http%3A%2F%2Fwww.cnn.com%2F&u=oeu1449982829371r0.1378776643822348&wxhr=true&time=1450056289.511&f=3362100525,4128893592,4044622920,3432030159,4052120025,4037979629&g=3734750647,1387641853,3691011633&cx2=ee9198fb HTTP/1.1
+Host: 131788053.log.optimizely.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:39.0) Gecko/20100101 Firefox/39.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://www.cnn.com/
+Origin: http://www.cnn.com
+Cookie: end_user_id=oeu1449982829371r0.1378776643822348
+Connection: keep-alive
+
+
+SERVER HTTP RESPONSE:
+HTTP/1.1 200 OK
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Headers: Content-Type, X-Requested-With
+Access-Control-Allow-Methods: GET
+Access-Control-Allow-Origin: http://www.cnn.com
+Content-Type: application/json
+Date: Mon, 14 Dec 2015 01:24:49 GMT
+P3P: CP="IDC DSP COR CURa ADMa OUR IND PHY ONL COM STA"
+Server: nginx
+Content-Length: 2
+Connection: keep-alive
+
+
+CLIENT HTTP REQUEST
+GET http://i2.cdn.turner.com/cnnnext/dam/assets/151211154442-anton-lavey-restricted-small-11.jpg HTTP/1.1
+Host: i2.cdn.turner.com
+User-Agent: Mozilla/5CLIENT HTTP REQUEST
+GET http://i2.cdn.turner.com/cnnnext/dam/assets/151212002322-gbs-synesthesia-large-alt-11.jpg HTTP/1.1
+Host: i2.cdn.turner.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:39.0) Gecko/20100101 Firefox/39.0
+Accept: image/png,image/*;q=0.8,*/*;q=0.5
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://www.cnn.com/
+Connection: keep-alive
+
+
+SERVER HTTP RESPONSE:
+HTTP/1.1 200 OK
+Server: Apache-Coyote/1.1
+Content-Type: image/jpeg
+Content-Length: 51031
+Cache-Control: max-age=6271
+Expires: Mon, 14 Dec 2015 03:09:22 GMT
+Date: Mon, 14 Dec 2015 01:24:51 GMT
+Connection: keep-alive
+
+
+CLIENT HTTP REQUEST
+GET http://cdn.krxd.net/userdata/get?pub=e9eaedd3-c1da-4334-82f0-d7e3ff883c87&callback=Krux.ns._default.kxjsonp_userdata HTTP/1.1
+Host: cdn.krxd.net
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:39.0) Gecko/20100101 Firefox/39.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://www.cnn.com/
+Cookie: ServedBy=beacon-a101-pdx; _kuid_=KO097E1w
+Connection: keep-alive
+
+
+SERVER HTTP RESPONSE:
+HTTP/1.1 200 OK
+Cache-Control: private, max-age=1800
+Content-Encoding: gzip
+Content-Type: text/javascript
+X-Age: 0
+X-Request-Backend: kuser_data
+X-CDN-Backend: 4FrRTvEr9h480D4BywjehZ--F_userdata_krxd_net___UserData_Service_V2
+Content-Length: 204
+Accept-Ranges: bytes
+Date: Mon, 14 Dec 2015 01:24:52 GMT
+Via: 1.1 varnish
+Age: 0
+Connection: keep-alive
+X-Served-By: userdata-a012.krxd.net, cache-lax1420-LAX
+X-Cache: MISS, MISS
+X-Cache-Hits: 0, 0
+Vary: Accept-Encoding
+
+
+CLIENT HTTP REQUEST
+GET http://www.cnn.com/favicon.ie9.ico HTTP/1.1
+Host: www.cnn.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:39.0) Gecko/20100101 Firefox/39.0
+Accept: image/png,image/*;q=0.8,*/*;q=0.5
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Cookie: optimizelyEndUserId=oeu1449982829371r0.1378776643822348; optimizelySegments=%7B%22170962340%22%3A%22false%22%2C%22171657961%22%3A%22ff%22%2C%22172148679%22%3A%22none%22%2C%22172265329%22%3A%22direct%22%7D; optimizelyBuckets=%7B%7D; s_fid=00CF141DA9A1E44A-271C317D6F02DCE8; __CT_Data=gpv=6&apv_49_www04=5; WRUIDC=0; _cb_ls=1; _chartbeat2=6Qf9-CMzfptCWZRHk.1449994112423.1450056167356.1; __gads=ID=a52ef1de2f36cce9:T=1449994283:S=ALNI_MZUgJYIEf2Zlb3n4IgbCa70XcHfrQ; __vrf=1450055640174fDp0gAV9gSXhyTtPVi0USb9s1mlnL9r6; s_cc=true; s_sq=%5B%5BB%5D%5D; _chartbeat4=t=D01mNE8gEcGDmfixjDa9i1MCW_xZ0&E=8&EE=8&x=0&c=0.86&y=6943&w=820; optimizelyPendingLogEvents=%5B%5D
+Connection: keep-alive
+
+
+SERVER HTTP RESPONSE:
+HTTP/1.1 200 OK
+x-servedByHost: prd-10-60-170-43.nodes.56m.dmtio.net
+Cache-Control: max-age=2592000
+Content-Type: image/x-icon
+Content-Encoding: gzip
+Via: 1.1 varnish
+Fastly-Debug-Digest: 6372ccf1e84c47734e6583e799cd79ac2b597c5cdac5be845f398f58eafc6f47
+Content-Length: 2636
+Accept-Ranges: bytes
+Date: Mon, 14 Dec 2015 01:24:52 GMT
+Via: 1.1 varnish
+Age: 1152418
+Connection: keep-alive
+X-Served-By: cache-iad2133-IAD, cache-dfw1827-DFW
+X-Cache: HIT, HIT
+X-Cache-Hits: 1, 75267
+X-Timer: S1450056292.595022,VS0,VE0
+Vary: Accept-Encoding
+
+
+CLIENT HTTP REQUEST
+GET http://z.cdn.turner.com/xslo/aspen/config/cnntos/cnn/aspenanalytics.json?_=1318 HTTP/1.1
+Host: z.cdn.turner.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:39.0) Gecko/20100101 Firefox/39.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://www.cnn.com/
+Connection: keep-alive
+
+
+SERVER HTTP RESPONSE:
+HTTP/1.1 200 OK
+Server: ngx_openresty
+Last-Modified: Fri, 24 Jul 2015 18:15:54 GMT
+Content-Type: text/html
+Accept-Ranges: bytes
+Vary: Accept-Encoding
+Content-Encoding: gzip
+Content-Length: 330
+Cache-Control: max-age=3219
+Expires: Mon, 14 Dec 2015 02:18:32 GMT
+Date: Mon, 14 Dec 2015 01:24:53 GMT
+Connection: keep-alive
+
+
+CLIENT HTTP REQUEST
+GET http://aspen.turner.com/static/xdm_iframe.html?xdm_e=http%3A%2F%2Fwww.cnn.com&xdm_c=default7731&xdm_p=1 HTTP/1.1
+Host: aspen.turner.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:39.0)CLIENT HTTP REQUEST
+GET http://i2.cdn.turner.com/cnnnext/dam/assets/151212002445-gbs-toy-pianos-medium-plus-34.jpg HTTP/1.1
+Host: i2.cdn.turner.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:39.0) Gecko/20100101 Firefox/39.0
+Accept: image/png,image/*;q=0.8,*/*;q=0.5
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://www.cnn.com/
+Connection: keep-alive
+
+
+SERVER HTTP RESPONSE:
+HTTP/1.1 200 OK
+Server: Apache-Coyote/1.1
+Content-Type: image/jpeg
+Content-Length: 38163
+Cache-Control: max-age=5803
+Expires: Mon, 14 Dec 2015 03:01:34 GMT
+Date: Mon, 14 Dec 2015 01:24:51 GMT
+Connection: keep-alive
+
+
+CLIENT HTTP REQUEST
+GET http://googleads.g.doubleclick.net/pagead/viewthroughconversion/986255830/?value=0&guid=ON&script=0 HTTP/1.1
+Host: googleads.g.doubleclick.net
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:39.0) Gecko/20100101 Firefox/39.0
+Accept: image/png,image/*;q=0.8,*/*;q=0.5
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://www.cnn.com/
+Cookie: id=22aa7c7f2a04008d||t=1446760688|et=730|cs=002213fd48afcf1a07826a8453; IDE=AHWqTUmlBUf96khc_GiAXKCSZs2xn3J4oL2NEh7-PjHfZxKb1eVDOUKosA
+Connection: keep-alive
+
+
+SERVER HTTP RESPONSE:
+HTTP/1.1 302 Found
+P3P: policyref="http://googleads.g.doubleclick.net/pagead/gcn_p3p_.xml", CP="CURa ADMa DEVa TAIo PSAo PSDo OUR IND UNI PUR INT DEM STA PRE COM NAV OTC NOI DSP COR"
+Date: Mon, 14 Dec 2015 01:24:52 GMT
+Pragma: no-cache
+Expires: Fri, 01 Jan 1990 00:00:00 GMT
+Cache-Control: no-cache, must-revalidate
+Location: http://www.google.com/ads/user-lists/986255830/?script=0&random=2762995340
+Content-Type: image/gif
+X-Content-Type-Options: nosniff
+Server: cafe
+Content-Length: 42
+X-XSS-Protection: 1; mode=block
+
+
+CLIENT HTTP REQUEST
+GET http://beacon.krxd.net/pixel.gif?source=smarttag&fired=report&confid=ITb_4eqO&_kpid=e9eaedd3-c1da-4334-82f0-d7e3ff883c87&_kcp_s=CNN&_kcp_d=www.cnn.com&_knifr=4&_kua_kx_tz=480&geo_country=us&geo_region=wa&geo_dma=881&_kua_kx_lang=en-us&_kua_kx_tech_browser_language=en-us&_kua_kx_geo_country=us&_kua_kx_geo_region=wa&_kua_kx_geo_dma=881&_kua_kx_tech_browser=Firefox%2039&_kua_kx_tech_manufacturer=Other&_kua_kx_tech_device=Computer&_kua_kx_tech_os=Linux&_kua_af_id=00CF141DA9A1E44A-271C317D6F02DCE8&_kpa_keywords=cnn%20news%2C%20daily%20news%2C%20breaking%20news%2C%20news%20today%2C%20current%20events&t_navigation_type=0&t_dns=0&t_tcp=0&t_http_request=-1&t_http_response=0&t_content_ready=3469&t_window_load=3987&t_redirect=0&interchange_ran=true&store_user=p8ip9wa9e&userdata_was_requested=true&userdata_did_respond=true&store_user_after=p8ip9wa9e&userdata_user=KO097E1w%2Cp8ip9wa9e&sview=2&kplt4=45235&kplt7=28016&kplt13=45332&kplt14=69145&kplt15=36134&kplt20=34398&kplt21=34399&kplt24=32379&kplt25=32385&kplt28=44196&kplt29=44197&kplt30=44201&kplt31=44202&kplt33=44248&jsonp_requests=%2F%2Fbeacon.krxd.net%2Foptout_check%2C446%2C%2F%2Fcdn.krxd.net%2Fuserdata%2Fget%2C444 HTTP/1.1
+Host: beacon.krxd.net
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:39.0) Gecko/20100101 Firefox/39.0
+Accept: image/png,image/*;q=0.8,*/*;q=0.5
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://www.cnn.com/
+Cookie: ServedBy=beacon-a135-pdx; _kuid_=KO097E1w
+Connection: keep-alive
+
+
+SERVER HTTP RESPONSE:
+HTTP/1.1 204 No Content
+Cache-Control: private, no-cache, no-store
+Content-Length: 0
+Content-Type: image/gif
+Date: Mon, 14 Dec 2015 01:24:52 GMT
+P3P: policyref="http://cdn.krxd.net/kruxcontent/p3p.xml", CP="NON DSP COR NID OUR DEL SAM OTR UNR COM NAV INT DEM CNT STA PRE LOC OTC"
+Server: Apache
+Set-Cookie: ServedBy=beacon-a131-pdx; path=/; domain=.krxd.net; expires=Sat, 11-Jun-2016 14:44:52 GMT
+Set-Cookie: _kuid_=KO097E1w; path=/; expires=Sat, 11-Jun-16 01:24:52 GMT; domain=.krxd.net
+X-Request-Time: D=193 t=1450056292676351
+X-Served-By: beacon-a131-pdx.krxd.net
+Connection: keep-alive
+
+
+CLIENT HTTP REQUEST
+GET http://ping.chartbeat.net/ping?h=cnn.com&p=%2F&u=6Qf9-CMzfptCWZRHk&d=cnn.com&g=37612&g0=homepage&n=0&f=00001&c=0.25&x=0&m=0&y=5535&o=1CLIENT HTTP REQUEST
+GET http://data.cnn.com/1m/sp/imm.dat HTTP/1.1
+Host: data.cnn.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:39.0) Gecko/20100101 Firefox/39.0
+Accept: text/html, */*; q=0.01
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://www.cnn.com/
+Origin: http://www.cnn.com
+Connection: keep-alive
+If-Modified-Since: Wed, 21 Oct 2015 13:00:18 GMT
+
+
+SERVER HTTP RESPONSE:
+HTTP/1.1 304 Not Modified
+Server: nginx
+Date: Mon, 14 Dec 2015 01:24:51 GMT
+Connection: keep-alive
+Vary: Origin
+Access-Control-Allow-Origin: http://www.cnn.com
+Access-Control-Allow-Methods: POST, GET
+Access-Control-Request-Header: x-requested-with
+Last-Modified: Wed, 21 Oct 2015 13:00:18 GMT
+
+
+CLIENT HTTP REQUEST
+GET http://i2.cdn.turner.com/cnnnext/dam/assets/151211154442-anton-lavey-restricted-small-11.jpg HTTP/1.1
+Host: i2.cdn.turner.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:39.0) Gecko/20100101 Firefox/39.0
+Accept: image/png,image/*;q=0.8,*/*;q=0.5
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://www.cnn.com/
+Connection: keep-alive
+
+
+SERVER HTTP RESPONSE:
+HTTP/1.1 200 OK
+Server: Apache-Coyote/1.1
+Content-Type: image/jpeg
+Content-Length: 5120
+Cache-Control: max-age=1880
+Expires: Mon, 14 Dec 2015 01:56:11 GMT
+Date: Mon, 14 Dec 2015 01:24:51 GMT
+Connection: keep-alive
+
+
+CLIENT HTTP REQUEST
+GET http://i2.cdn.turner.com/cnnnext/dam/assets/151211145049-texas-law-hawk-2-medium-tease.jpg HTTP/1.1
+Host: i2.cdn.turner.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:39.0) Gecko/20100101 Firefox/39.0
+Accept: image/png,image/*;q=0.8,*/*;q=0.5
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://www.cnn.com/
+Connection: keep-alive
+
+
+SERVER HTTP RESPONSE:
+HTTP/1.1 200 OK
+Server: Apache-Coyote/1.1
+Content-Type: image/jpeg
+Content-Length: 8806
+Cache-Control: max-age=1886
+Expires: Mon, 14 Dec 2015 01:56:17 GMT
+Date: Mon, 14 Dec 2015 01:24:51 GMT
+Connection: keep-alive
+
+
+CLIENT HTTP REQUEST
+GET http://i2.cdn.turner.com/cnnnext/dam/assets/151210154222-12-week-in-photos-1211-medium-tease.jpg HTTP/1.1
+Host: i2.cdn.turner.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:39.0) Gecko/20100101 Firefox/39.0
+Accept: image/png,image/*;q=0.8,*/*;q=0.5
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://www.cnn.com/
+Connection: keep-alive
+
+
+SERVER HTTP RESPONSE:
+HTTP/1.1 200 OK
+Server: Apache-Coyote/1.1
+Content-Type: image/jpeg
+Content-Length: 10516
+Cache-Control: max-age=990
+Expires: Mon, 14 Dec 2015 01:41:21 GMT
+Date: Mon, 14 Dec 2015 01:24:51 GMT
+Connection: keep-alive
+
+
+CLIENT HTTP REQUEST
+GET http://i2.cdn.turner.com/cnnnext/dam/assets/151212160722-02-santa-run-1212-medium-tease.jpg HTTP/1.1
+Host: i2.cdn.turner.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:39.0) Gecko/20100101 Firefox/39.0
+Accept: image/png,image/*;q=0.8,*/*;q=0.5
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://www.cnn.com/
+Connection: keep-alive
+
+
+SERVER HTTP RESPONSE:
+HTTP/1.1 200 OK
+Server: Apache-Coyote/1.1
+Content-Type: image/jpeg
+Content-Length: 21837
+Cache-Control: max-age=2846
+Expires: Mon, 14 Dec 2015 02:12:17 GMT
+Date: Mon, 14 Dec 2015 01:24:51 GMT
+Connection: keep-alive
+
+
+CLIENT HTTP REQUEST
+GET http://i2.cdn.turner.com/cnnnext/dam/assets/151212183312-07b-week-in-politics-medium-tease.jpg HTTP/1.1
+Host: i2.cdn.turner.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:39.0) Gecko/20100101 Firefox/39.0
+Accept: image/png,image/*;q=0.8,*/*;q=0.5
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://www.cnn.com/
+Connection: keep-alive
+
+
+SERVER HTTP RESPONSE:
+HTTP/1.1 200 OK
+Server: Apache-Coyote/1.1
+Content-Type: image/jpeg
+Content-Length: 15624
+Cache-Control: max-age=1479
+Expires: Mon, 14 Dec 2015 01:49:30 GMT
+Date: Mon, 14 Dec 2015 01:24:51 GMT
+Connection: keep-alive
+
+
+CLIENT HTTP REQUEST
+GET http://i2.cdn.turner.com/cnnnext/dam/assets/150805185146-07-25619-001-1913-cc-small-11.jpg HTTP/1.1
+Host: i2.cdn.turner.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:39.0) Gecko/20100101 Firefox/39.0
+Accept: image/png,image/*;q=0.8,*/*;q=0.5
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://www.cnn.com/
+Connection: keep-alive
+
+
+SERVER HTTP RESPONSE:
+HTTP/1.1 200 OK
+Server: Apache-Coyote/1.1
+Content-Type: image/jpeg
+Content-Length: 4324
+Cache-Control: max-age=3537
+Expires: Mon, 14 Dec 2015 02:23:48 GMT
+Date: Mon, 14 Dec 2015 01:24:51 GMT
+Connection: keep-alive
+
+
+CLIENT HTTP REQUEST
+GET http://i2.cdn.turner.com/cnnnext/dam/assets/151211154442-anton-lavey-restricted-large-tease.jpg HTTP/1.1
+Host: i2.cdn.turner.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:39.0) Gecko/20100101 Firefox/39.0
+Accept: image/png,image/*;q=0.8,*/*;q=0.5
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://www.cnn.com/
+Connection: keep-alive
+
+
+SERVER HTTP RESPONSE:
+HTTP/1.1 200 OK
+Server: Apache-Coyote/1.1
+Content-Type: image/jpeg
+Content-Length: 33744
+Cache-Control: max-age=1740
+Expires: Mon, 14 Dec 2015 01:53:51 GMT
+Date: Mon, 14 Dec 2015 01:24:51 GMT
+Connection: keep-alive
+
+
+CLIENT HTTP REQUEST
+GET http://t.co/i/adsct?txn_id=l5cqg&p_id=Twitter HTTP/1.1
+Host: t.co
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:39.0) Gecko/20100101 Firefox/39.0
+Accept: image/png,image/*;q=0.8,*/*;q=0.5
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://www.cnn.com/
+Connection: keep-alive
+
+
+SERVER HTTP RESPONSE:
+HTTP/1.1 200 OK
+cache-control: no-cache, no-store, must-revalidate, pre-check=0, post-check=0
+content-encoding: gzip
+content-length: 65
+content-type: image/gif;charset=utf-8
+date: Mon, 14 Dec 2015 01:24:52 GMT
+expires: Tue, 31 Mar 1981 05:00:00 GMT
+last-modified: Mon, 14 Dec 2015 01:24:52 GMT
+pragma: no-cache
+server: tsa_a
+status: 200 OK
+x-connection-hash: ea1d80d4d8664c5017a78943fc7039c3
+x-content-type-options: nosniff
+x-frame-options: SAMEORIGIN
+x-response-time: 6
+x-transaction: c2457a260ca39000
+x-twitter-response-tags: BouncerCompliant
+x-xss-protection: 1; mode=block
+
+
+CLIENT HTTP REQUEST
+GET http://i2.cdn.turner.com/cnnnext/dam/assets/151211094349-cnnmoneysupercars-medium-tease.jpg HTTP/1.1
+Host: i2.cdn.turner.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:39.0) Gecko/20100101 Firefox/39.0
+Accept: image/png,image/*;q=0.8,*/*;q=0.5
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://www.cnn.com/
+Connection: keep-alive
+
+
+SERVER HTTP RESPONSE:
+HTTP/1.1 200 OK
+Server: Apache-Coyote/1.1
+Content-Type: image/jpeg
+Content-Length: 16844
+Cache-Control: max-age=5884
+Expires: Mon, 14 Dec 2015 03:02:55 GMT
+Date: Mon, 14 Dec 2015 01:24:51 GMT
+Connection: keep-alive
+
+
+CLIENT HTTP REQUEST
+GET http://i2.cdn.turner.com/cnnnext/dam/assets/151213190539-september-gop-debates-file-overlay-tease.jpg HTTP/1.1
+Host: i2.cdn.turner.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:39.0) Gecko/20100101 Firefox/39.0
+Accept: image/png,image/*;q=0.8,*/*;q=0.5
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://www.cnn.com/
+Connection: keep-alive
+
+
+SERVER HTTP RESPONSE:
+HTTP/1.1 200 OK
+Server: Apache-Coyote/1.1
+Content-Type: image/jpeg
+Content-Length: 62368
+Cache-Control: max-age=3036
+Expires: Mon, 14 Dec 2015 02:15:27 GMT
+Date: Mon, 14 Dec 2015 01:24:51 GMT
+Connection: keep-alive
+
+
+CLIENT HTTP REQUEST
+GET http://beacon.krxd.net/optout_check?callback=Krux.ns._default.kxjsonp_optOutCheck HTTP/1.1
+Host: beacon.krxd.net
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:39.0) Gecko/20100101 Firefox/39.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://www.cnn.com/
+Cookie: ServedBy=beacon-a101-pdx; _kuid_=KO097E1w
+Connection: keep-alive
+
+
+SERVER HTTP RESPONSE:
+HTTP/1.1 200 OK
+Cache-Control: private, max-age=0, s-max-age=0
+Content-Type: text/javascript
+Date: Mon, 14 Dec 2015 01:24:52 GMT
+P3P: policyref="http://cdn.krxd.net/kruxcontent/p3p.xml", CP="NON DSP COR NID OUR DEL SAM OTR UNR COM NAV INT DEM CNT STA PRE LOC OTC"
+Server: Apache
+Set-Cookie: ServedBy=beacon-a135-pdx; path=/; domain=.krxd.net; expires=Sat, 11-Jun-2016 14:44:52 GMT
+X-Request-Time: D=338 t=1450056292159575
+X-Served-By: beacon-a135-pdx.krxd.net
+Content-Length: 90
+Connection: keep-alive
+
+
+CLIENT HTTP REQUEST
+GET http://t.co/i/adsct?txn_id=l4urr&p_id=Twitter HTTP/1.1
+Host: t.co
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:39.0) Gecko/20100101 Firefox/39.0
+Accept: image/png,image/*;q=0.8,*/*;q=0.5
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://www.cnn.com/
+Connection: keep-alive
+
+
+SERVER HTTP RESPONSE:
+HTTP/1.1 200 OK
+cache-control: no-cache, no-store, must-revalidate, pre-check=0, post-check=0
+content-encoding: gzip
+content-length: 65
+content-type: image/gif;charset=utf-8
+date: Mon, 14 Dec 2015 01:24:52 GMT
+expires: Tue, 31 Mar 1981 05:00:00 GMT
+last-modified: Mon, 14 Dec 2015 01:24:52 GMT
+pragma: no-cache
+server: tsa_a
+status: 200 OK
+x-connection-hash: 13dc91a80546ccef4a5c1c1d70d1c58f
+x-content-type-options: nosniff
+x-frame-options: SAMEORIGIN
+x-response-time: 7
+x-transaction: 72865b857959b4e4
+x-twitter-response-tags: BouncerCompliant
+x-xss-protection: 1; mode=block
+
+
+CLIENT HTTP REQUEST
+GET http://i2.cdn.turner.com/cnnnext/dam/assets/151212002532-gbs-stockholm-subway-medium-plus-34.jpg HTTP/1.1
+Host: i2.cdn.turner.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:39.0) Gecko/20100101 Firefox/39.0
+Accept: image/png,image/*;q=0.8,*/*;q=0.5
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://www.cnn.com/
+Connection: keep-alive
+
+
+SERVER HTTP RESPONSE:
+HTTP/1.1 200 OK
+Server: Apache-Coyote/1.1
+Content-Type: image/jpeg
+Content-Length: 44615
+Cache-Control: max-age=5175
+Expires: Mon, 14 Dec 2015 02:51:06 GMT
+Date: Mon, 14 Dec 2015 01:24:51 GMT
+Connection: keep-alive
+
+
+CLIENT HTTP REQUEST
+GET http://t.co/i/adsct?txn_id=l4umf&p_id=Twitter HTTP/1.1
+Host: t.co
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:39.0) Gecko/20100101 Firefox/39.0
+Accept: image/png,image/*;q=0.8,*/*;q=0.5
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://www.cnn.com/
+Connection: keep-alive
+
+
+SERVER HTTP RESPONSE:
+HTTP/1.1 200 OK
+cache-control: no-cache, no-store, must-revalidate, pre-check=0, post-check=0
+content-encoding: gzip
+content-length: 65
+content-type: image/gif;charset=utf-8
+date: Mon, 14 Dec 2015 01:24:52 GMT
+expires: Tue, 31 Mar 1981 05:00:00 GMT
+last-modified: Mon, 14 Dec 2015 01:24:52 GMT
+pragma: no-cache
+server: tsa_a
+status: 200 OK
+x-connection-hash: db954e1ff4f7a129fa62c75dc8478990
+x-content-type-options: nosniff
+x-frame-options: SAMEORIGIN
+x-response-time: 5
+x-transaction: aaa3798c4d9fb5c4
+x-twitter-response-tags: BouncerCompliant
+x-xss-protection: 1; mode=block
+
+
+CLIENT HTTP REQUEST
+GET http://i2.cdn.turner.com/cnnnext/dam/assets/151209112904-cindy-crawford-clooney-conan-large-tease.jpg HTTP/1.1
+Host: i2.cdn.turner.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:39.0) Gecko/20100101 Firefox/39.0
+Accept: image/png,image/*;q=0.8,*/*;q=0.5
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://www.cnn.com/
+Connection: keep-alive
+
+
+SERVER HTTP RESPONSE:
+HTTP/1.1 200 OK
+Server: Apache-Coyote/1.1
+Content-Type: image/jpeg
+Content-Length: 18246
+Cache-Control: max-age=5103
+Expires: Mon, 14 Dec 2015 02:49:54 GMT
+Date: Mon, 14 Dec 2015 01:24:51 GMT
+Connection: keep-alive
+
+
+CLIENT HTTP REQUEST
+GET http://i2.cdn.turner.com/cnnnext/dam/assets/150325174323-dead-sea-thumb-1-small-11.png HTTP/1.1
+Host: i2.cdn.turner.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:39.0) Gecko/20100101 Firefox/39.0
+Accept: image/png,image/*;q=0.8,*/*;q=0.5
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://www.cnn.com/
+Connection: keep-alive
+
+
+SERVER HTTP RESPONSE:
+HTTP/1.1 200 OK
+Server: Apache-Coyote/1.1
+Content-Type: image/png
+Content-Length: 24951
+Cache-Control: max-age=6409
+Expires: Mon, 14 Dec 2015 03:11:40 GMT
+Date: Mon, 14 Dec 2015 01:24:51 GMT
+Connection: keep-alive
+
+
+CLIENT HTTP REQUEST
+GET http://i2.cdn.turner.com/cnnnext/dam/assets/150512085916-new-explorers-brooks-creature-bottle-small-11.jpg HTTP/1.1
+Host: i2.cdn.turner.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:39.0) Gecko/20100101 Firefox/39.0
+Accept: image/png,image/*;q=0.8,*/*;q=0.5
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://www.cnn.com/
+Connection: keep-alive
+
+
+SERVER HTTP RESPONSE:
+HTTP/1.1 200 OK
+Server: Apache-Coyote/1.1
+Content-Type: image/jpeg
+Content-Length: 5278
+Cache-Control: max-age=1345
+Expires: Mon, 14 Dec 2015 01:47:16 GMT
+Date: Mon, 14 Dec 2015 01:24:51 GMT
+Connection: keep-alive
+
+
+CLIENT HTTP REQUEST
+GET http://i2.cdn.turner.com/cnnnext/dam/assets/151211171417-new-york-airbnb-tenants-landlord-bedroom-apartment-dnt-00002412-small-11.jpg HTTP/1.1
+Host: i2.cdn.turner.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:39.0) Gecko/20100101 Firefox/39.0
+Accept: image/png,image/*;q=0.8,*/*;q=0.5
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://www.cnn.com/
+Connection: keep-alive
+
+
+SERVER HTTP RESPONSE:
+HTTP/1.1 200 OK
+Server: Apache-Coyote/1.1
+Content-Type: image/jpeg
+Content-Length: 5140
+Cache-Control: max-age=891
+Expires: Mon, 14 Dec 2015 01:39:42 GMT
+Date: Mon, 14 Dec 2015 01:24:51 GMT
+Connection: keep-alive
+
+
+CLIENT HTTP REQUEST
+GET http://i2.cdn.turner.com/cnnnext/dam/assets/150408184620-wonder-list-everglades-python-00001702-small-11.jpg HTTP/1.1
+Host: i2.cdn.turner.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:39.0) Gecko/20100101 Firefox/39.0
+Accept: image/png,image/*;q=0.8,*/*;q=0.5
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://www.cnn.com/
+Connection: keep-alive
+
+
+SERVER HTTP RESPONSE:
+HTTP/1.1 200 OK
+Server: Apache-Coyote/1.1
+Content-Type: image/jpeg
+Content-Length: 4254
+Cache-Control: max-age=6256
+Expires: Mon, 14 Dec 2015 03:09:07 GMT
+Date: Mon, 14 Dec 2015 01:24:51 GMT
+Connection: keep-alive
+
+
+CLIENT HTTP REQUEST
+GET http://i2.cdn.turner.com/cnnnext/dam/assets/151103105234-bourdain-istanbul-small-11.jpg HTTP/1.1
+Host: i2.cdn.turner.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:39.0) Gecko/20100101 Firefox/39.0
+Accept: image/png,image/*;q=0.8,*/*;q=0.5
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://www.cnn.com/
+Connection: keep-alive
+
+
+SERVER HTTP RESPONSE:
+HTTP/1.1 200 OK
+Server: Apache-Coyote/1.1
+Content-Type: image/jpeg
+Content-Length: 5157
+Cache-Control: max-age=2916
+Expires: Mon, 14 Dec 2015 02:13:27 GMT
+Date: Mon, 14 Dec 2015 01:24:51 GMT
+Connection: keep-alive
+
+
+CLIENT HTTP REQUEST
+GET http://i2.cdn.turner.com/cnnnext/dam/assets/151028103434-02-pu-borneo-small-11.jpg HTTP/1.1
+Host: i2.cdn.turner.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:39.0) Gecko/20100101 Firefox/39.0
+Accept: image/png,image/*;q=0.8,*/*;q=0.5
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://www.cnn.com/
+Connection: keep-alive
+
+
+SERVER HTTP RESPONSE:
+HTTP/1.1 200 OK
+Server: Apache-Coyote/1.1
+Content-Type: image/jpeg
+Content-Length: 7187
+Cache-Control: max-age=6265
+Expires: Mon, 14 Dec 2015 03:09:16 GMT
+Date: Mon, 14 Dec 2015 01:24:51 GMT
+Connection: keep-alive
+
+
+CLIENT HTTP REQUEST
+GET http://i2.cdn.turner.com/cnnnext/dam/assets/151007103448-09-bourdain-parts-unknown-okinawa-small-11.jpg HTTP/1.1
+Host: i2.cdn.turner.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:39.0) Gecko/20100101 Firefox/39.0
+Accept: image/png,image/*;q=0.8,*/*;q=0.5
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://www.cnn.com/
+Connection: keep-alive
+
+
+SERVER HTTP RESPONSE:
+HTTP/1.1 200 OK
+Server: Apache-Coyote/1.1
+Content-Type: image/jpeg
+Content-Length: 6463
+Cache-Control: max-age=2434
+Expires: Mon, 14 Dec 2015 02:05:25 GMT
+Date: Mon, 14 Dec 2015 01:24:51 GMT
+Connection: keep-alive
+
+
+CLIENT HTTP REQUEST
+GET http://i2.cdn.turner.com/cnnnext/dam/assets/151117232031-maggie-doyne-small-11.jpeg HTTP/1.1
+Host: i2.cdn.turner.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:39.0) Gecko/20100101 Firefox/39.0
+Accept: image/png,image/*;q=0.8,*/*;q=0.5
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://www.cnn.com/
+Connection: keep-alive
+
+
+SERVER HTTP RESPONSE:
+HTTP/1.1 200 OK
+Server: Apache-Coyote/1.1
+Content-Type: image/jpeg
+Content-Length: 5813
+Cache-Control: max-age=3967
+Expires: Mon, 14 Dec 2015 02:30:58 GMT
+Date: Mon, 14 Dec 2015 01:24:51 GMT
+Connection: keep-alive
+
+
+CLIENT HTTP REQUEST
+GET http://www.i.cdn.cnn.com/.a/1.226.0/css/pages/page-blessed2.css HTTP/1.1
+Host: www.i.cdn.cnn.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:39.0) Gecko/20100101 Firefox/39.0
+Accept: text/css,*/*;q=0.1
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://www.cnn.com/
+Cookie: optimizelyEndUserId=oeu1449982829371r0.1378776643822348; optimizelySegments=%7B%22170962340%22%3A%22false%22%2C%22171657961%22%3A%22ff%22%2C%22172148679%22%3A%22none%22%2C%22172265329%22%3A%22direct%22%7D; optimizelyBuckets=%7B%7D; s_fid=00CF141DA9A1E44A-271C317D6F02DCE8; __CT_Data=gpv=5&apv_49_www04=5; WRUIDC=0; __gads=ID=a52ef1de2f36cce9:T=1449994283:S=ALNI_MZUgJYIEf2Zlb3n4IgbCa70XcHfrQ; __vrf=1450055640174fDp0gAV9gSXhyTtPVi0USb9s1mlnL9r6; s_cc=true; s_sq=%5B%5BB%5D%5D
+Connection: keep-alive
+
+
+SERVER HTTP RESPONSE:
+HTTP/1.1 200 OK
+x-servedByHost: prd-10-60-168-42.nodes.56m.dmtio.net
+Cache-Control: max-age=2592000
+Content-Type: text/css; charset=UTF-8
+Content-Encoding: gzip
+Via: 1.1 varnish
+Content-Length: 47217
+Accept-Ranges: bytes
+Date: Mon, 14 Dec 2015 01:24:48 GMT
+Via: 1.1 varnish
+Age: 204552
+Connection: keep-alive
+X-Served-By: cache-iad2136-IAD, cache-dfw1832-DFW
+X-Cache: HIT, HIT
+X-Cache-Hits: 9, 126798
+X-Timer: S1450056288.503178,VS0,VE0
+Vary: Accept-Encoding
+
+
+CLIENT HTTP REQUEST
+GET http://www.cnn.com/data/ocs/section/index.html:homepage3-zone-1/views/zones/common/zone-manager.html HTTP/1.1
+Host: www.cnn.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:39.0) Gecko/20100101 Firefox/39.0
+Accept: text/html, */*; q=0.01
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+X-Requested-With: XMLHttpRequest
+Referer: http://www.cnn.com/
+Cookie: optimizelyEndUserId=oeu1449982829371r0.1378776643822348; optimizelySegments=%7B%22170962340%22%3A%22false%22%2C%22171657961%22%3A%22ff%22%2C%22172148679%22%3A%22none%22%2C%22172265329%22%3A%22direct%22%7D; optimizelyBuckets=%7B%7D; s_fid=00CF141DA9A1E44A-271C317D6F02DCE8; __CT_Data=gpv=5&apv_49_www04=5; WRUIDC=0; _cb_ls=1; _chartbeat2=6Qf9-CMzfptCWZRHk.1449994112423.1450056167356.1; __gads=ID=a52ef1de2f36cce9:T=1449994283:S=ALNI_MZUgJYIEf2Zlb3n4IgbCa70XcHfrQ; __vrf=1450055640174fDp0gAV9gSXhyTtPVi0USb9s1mlnL9r6; s_cc=true; s_sq=%5B%5BB%5D%5D; _chartbeat4=t=D01mNE8gEcGDmfixjDa9i1MCW_xZ0&E=8&EE=8&x=0&c=0.86&y=6943&w=820; optimizelyPendingLogEvents=%5B%22n%3Dhttp%253A%252F%252Fwww.cnn.com%252F%26u%3Doeu1449982829371r0.1378776643822348%26wxhr%3Dtrue%26time%3D1450056289.293%26f%3D3362100525%2C4128893592%2C4044622920%2C3432030159%2C4052120025%2C4037979629%26g%3D3734750647%2C1387641853%2C3691011633%22%5D
+Connection: keep-alive
+
+
+SERVER HTTP RESPONSE:
+HTTP/1.1 302 Found
+Server: Varnish
+Retry-After: 0
+Location: http://edition.cnn.com/data/ocs/section/index.html:homepage3-zone-1/views/zones/common/zone-manager.html
+Via: 1.1 varnish
+Fastly-Debug-Digest: 3d06623e20b48ba1915237dcdf4009acba058580c54c7aa962b9c9b658f8c6c3
+Content-Length: 0
+Accept-Ranges: bytes
+Date: Mon, 14 Dec 2015 01:24:49 GMT
+Via: 1.1 varnish
+Age: 49
+Connection: keep-alive
+X-Served-By: cache-iad2151-IAD, cache-dfw1821-DFW
+X-Cache: HIT, HIT
+X-Cache-Hits: 0, 65
+X-Timer: S1450056289.471949,VS0,VE0
+
+
+CLIENT HTTP REQUEST
+GET http://www.i.cdn.cnn.com/.a/1.226.0/css/global.css HTTP/1.1
+Host: www.i.cdn.cnn.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:39.0) Gecko/20100101 Firefox/39.0
+Accept: text/css,*/*;q=0.1
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://www.cnn.com/
+Cookie: optimizelyEndUserId=oeu1449982829371r0.1378776643822348; optimizelySegments=%7B%22170962340%22%3A%22false%22%2C%22171657961%22%3A%22ff%22%2C%22172148679%22%3A%22none%22%2C%22172265329%22%3A%22direct%22%7D; optimizelyBuckets=%7B%7D; s_fid=00CF141DA9A1E44A-271C317D6F02DCE8; __CT_Data=gpv=5&apv_49_www04=5; WRUIDC=0; __gads=ID=a52ef1de2f36cce9:T=1449994283:S=ALNI_MZUgJYIEf2Zlb3n4IgbCa70XcHfrQ; __vrf=1450055640174fDp0gAV9gSXhyTtPVi0USb9s1mlnL9r6; s_cc=true; s_sq=%5B%5BB%5D%5D
+Connection: keep-alive
+
+
+SERVER HTTP RESPONSE:
+HTTP/1.1 200 OK
+x-servedByHost: prd-10-60-168-43.nodes.56m.dmtio.net
+Cache-Control: max-age=2592000
+Content-Type: text/css; charset=UTF-8
+Content-Encoding: gzip
+Via: 1.1 varnish
+Content-Length: 20840
+Accept-Ranges: bytes
+Date: Mon, 14 Dec 2015 01:24:48 GMT
+Via: 1.1 varnish
+Age: 204552
+Connection: keep-alive
+X-Served-By: cache-iad2135-IAD, cache-dfw1835-DFW
+X-Cache: HIT, HIT
+X-Cache-Hits: 1, 220844
+X-Timer: S1450056288.496333,VS0,VE0
+Vary: Accept-Encoding
+
+
+CLIENT HTTP REQUEST
+GET http://www.cnn.com/data/ocs/section/index.html:homepage4-zone-5/views/zones/common/zone-manager.html HTTP/1.1
+Host: www.cnn.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:39.0) Gecko/20100101 Firefox/39.0
+Accept: text/html, */*; q=0.01
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+X-Requested-With: XMLHttpRequest
+Referer: http://www.cnn.com/
+Cookie: optimizelyEndUserId=oeu1449982829371r0.1378776643822348; optimizelySegments=%7B%22170962340%22%3A%22false%22%2C%22171657961%22%3A%22ff%22%2C%22172148679%22%3A%22none%22%2C%22172265329%22%3A%22direct%22%7D; optimizelyBuckets=%7B%7D; s_fid=00CF141DA9A1E44A-271C317D6F02DCE8; __CT_Data=gpv=5&apv_49_www04=5; WRUIDC=0; _cb_ls=1; _chartbeat2=6Qf9-CMzfptCWZRHk.1449994112423.1450056167356.1; __gads=ID=a52ef1de2f36cce9:T=1449994283:S=ALNI_MZUgJYIEf2Zlb3n4IgbCa70XcHfrQ; __vrf=1450055640174fDp0gAV9gSXhyTtPVi0USb9s1mlnL9r6; s_cc=true; s_sq=%5B%5BB%5D%5D; _chartbeat4=t=D01mNE8gEcGDmfixjDa9i1MCW_xZ0&E=8&EE=8&x=0&c=0.86&y=6943&w=820; optimizelyPendingLogEvents=%5B%22n%3Dhttp%253A%252F%252Fwww.cnn.com%252F%26u%3Doeu1449982829371r0.1378776643822348%26wxhr%3Dtrue%26time%3D1450056289.293%26f%3D3362100525%2C4128893592%2C4044622920%2C3432030159%2C4052120025%2C4037979629%26g%3D3734750647%2C1387641853%2C3691011633%22%5D
+Connection: keep-alive
+
+
+SERVER HTTP RESPONSE:
+HTTP/1.1 200 OK
+x-servedByHost: prd-10-60-166-101.nodes.56m.dmtio.net
+Cache-Control: max-age=60
+X-XSS-Protection: 1; mode=block
+Content-Security-Policy: default-src 'self' http://*.cnn.com:* https://*.cnn.com:* *.cnn.net:* *.turner.com:* *.ugdturner.com:* *.vgtf.net:*; script-src 'unsafe-inline' 'unsafe-eval' 'self' *; style-src 'unsafe-inline' 'self' *; frame-src 'self' *; object-src 'self' *; img-src 'self' * data:; media-src 'self' *; font-src 'self' *; connect-src 'self' *;
+Access-Control-Allow-Origin: *
+Content-Type: text/html; charset=utf-8
+Via: 1.1 varnish
+Fastly-Debug-Digest: b419f0d41e10781ac2b180844ff0634b880750c709829e624a4d54e516810d12
+Content-Length: 0
+Accept-Ranges: bytes
+Date: Mon, 14 Dec 2015 01:24:49 GMT
+Via: 1.1 varnish
+Age: 310
+Connection: keep-alive
+X-Served-By: cache-iad2139-IAD, cache-dfw1831-DFW
+X-Cache: HIT, HIT
+X-Cache-Hits: 2, 476
+X-Timer: S1450056289.483250,VS0,VE0
+Vary: Accept-Encoding
+
+
+CLIENT HTTP REQUEST
+GET http://i2.cdn.turner.com/cnnnext/dam/assets/151209191602-cnnheroes-using-powers-for-good-special-00015527-small-11.jpg HTTP/1.1
+Host: i2.cdn.turner.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:39.0) Gecko/20100101 Firefox/39.0
+Accept: image/png,image/*;q=0.8,*/*;q=0.5
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://www.cnn.com/
+Connection: keep-alive
+
+
+SERVER HTTP RESPONSE:
+HTTP/1.1 200 OK
+Server: Apache-Coyote/1.1
+Content-Type: image/jpeg
+Content-Length: 3459
+Cache-Control: max-age=3314
+Expires: Mon, 14 Dec 2015 02:20:05 GMT
+Date: Mon, 14 Dec 2015 01:24:51 GMT
+Connection: keep-alive
+
+
+194&w=820&j=30&R=1&W=0&I=0&E=7&e=7&r=&b=3029&t=By1MOiCynX2gBMnI81DAnLho67Xc2&V=69&tz=480&sn=2&eM=0300&EE=7&_ HTTP/1.1
+Host: ping.chartbeat.net
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:39.0) Gecko/20100101 Firefox/39.0
+Accept: image/png,image/*;q=0.8,*/*;q=0.5
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://www.cnn.com/
+Connection: keep-alive
+
+
+SERVER HTTP RESPONSE:
+HTTP/1.1 200 OK
+Cache-Control: no-cache, no-store, must-revalidate
+Content-Type: image/gif
+Expires: 0
+Pragma: no-cache
+Content-Length: 43
+Connection: keep-alive
+
+
+CLIENT HTTP REQUEST
+GET http://ping.chartbeat.net/ping?h=cnn.com&p=%2F&u=6Qf9-CMzfptCWZRHk&d=cnn.com&g=37612&g0=homepage&n=0&f=00001&c=0.5&x=0&m=0&y=5535&o=1194&w=820&j=45&R=0&W=0&I=1&E=7&e=0&r=&b=3029&t=By1MOiCynX2gBMnI81DAnLho67Xc2&V=69&tz=480&sn=3&eM=0c00&EE=7&_ HTTP/1.1
+Host: ping.chartbeat.net
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:39.0) Gecko/20100101 Firefox/39.0
+Accept: image/png,image/*;q=0.8,*/*;q=0.5
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://www.cnn.com/
+Connection: keep-alive
+
+
+SERVER HTTP RESPONSE:
+HTTP/1.1 200 OK
+Cache-Control: no-cache, no-store, must-revalidate
+Content-Type: image/gif
+Expires: 0
+Pragma: no-cache
+Content-Length: 43
+Connection: keep-alive
+
+
+CLIENT HTTP REQUEST
+GET http://ping.chartbeat.net/ping?h=cnn.com&p=%2F&u=6Qf9-CMzfptCWZRHk&d=cnn.com&g=37612&g0=homepage&n=0&f=00001&c=1&x=0&m=0&y=5535&o=1194&w=820&j=30&R=1&W=0&I=0&E=8&e=1&r=&b=3029&t=By1MOiCynX2gBMnI81DAnLho67Xc2&V=69&tz=480&sn=4&eM=8024&EE=8&_ HTTP/1.1
+Host: ping.chartbeat.net
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:39.0) Gecko/20100101 Firefox/39.0
+Accept: image/png,image/*;q=0.8,*/*;q=0.5
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://www.cnn.com/
+Connection: keep-alive
+
+
+SERVER HTTP RESPONSE:
+HTTP/1.1 200 OK
+Cache-Control: no-cache, no-store, must-revalidate
+Content-Type: image/gif
+Expires: 0
+Pragma: no-cache
+Content-Length: 43
+Connection: keep-alive
+
+
